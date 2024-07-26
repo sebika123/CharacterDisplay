@@ -1,0 +1,24 @@
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .character-item {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .character-item img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .character-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  

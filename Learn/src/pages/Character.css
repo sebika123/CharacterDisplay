@@ -1,0 +1,33 @@
+.character-details {
+    padding: 20px;
+  }
+  
+  .character-details img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .character-details p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .episode-details {
+    margin-top: 20px;
+  }
+  
+  .update-description {
+    margin-top: 20px;
+  }
+  
+  .update-description textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  

@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import useCharacterHook from "../hooks/useCharacterHook";
+import "./CharacterList.css"; 
 
 const CharacterList: React.FC = () => {
   const { error, loading, data } = useCharacterHook();
@@ -15,16 +17,19 @@ const CharacterList: React.FC = () => {
   }
 
   return (
-    <>
+    <div className="character-list">
       {data.characters.results.map(
-        (character: { id: number; name: string; image: string }) => (
-          <div key={character.id}>
+        (character: { id: number; name: string; image: string, description: string }) => (
+          <div key={character.id} className="character-item">
             <h1>{character.name}</h1>
-            <img src={character.image} alt={character.name} />
+            <Link to={`/${character.id}`}>
+              <img src={character.image} alt={character.name} />
+            </Link>
+            <p>{character.description}</p>
           </div>
         )
       )}
-    </>
+    </div>
   );
 };
 
